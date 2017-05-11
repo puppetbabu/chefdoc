@@ -1,0 +1,21 @@
+{
+  "name": "myrole1",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+    "child": {
+      "file": "/var/tmp/filenew"
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[parant]",
+    "recipe[parant::parant]"
+  ],
+  "env_run_lists": {
+
+  }
+}

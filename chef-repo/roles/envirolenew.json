@@ -1,0 +1,31 @@
+{
+  "name": "envirole",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+    "envi": {
+      "file": "hello role"
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[envi]"
+  ],
+  "env_run_lists": {
+    "prod": [
+      "recipe[envi]"
+    ],
+    "preprod": [
+      "recipe[envi]"
+    ],
+    "test": [
+      "recipe[envi]"
+    ],
+    "dev": [
+      "recipe[envi]"
+    ]
+  }
+}
